@@ -1,0 +1,414 @@
+/*
+	Before writting any css code USE RESET CODE from HTML 5 doctor link 
+	So that all of your style will be supported in all browsers
+	http://html5doctor.com/html-5-reset-stylesheet/
+*/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,h1,h2,
+h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+.signup{
+  margin-top: 200px;
+}
+/*h2{
+  font-size: 25px;
+}*/
+body {
+    margin-top: 120px;
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+footer{
+  position: relative;
+  margin-bottom: 1px;
+}
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+/*a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}*/
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* MY CODE*/
+.main-wrapper { /* Name of the class which we specified in index.php file*/
+
+margin: 0 auto;
+width: 1000px;
+}
+
+/* Now we  need the content screen which is below nav */
+body {
+	background-color: white; /* Light grey color*/
+}
+header nav{
+	width: 100%;   /* Will go all over yhe screnn from left to right*/
+	height: 60px;
+	background-color: #fff; /*White color*/
+}
+
+/*To remove underlines from anchor tags*/
+/*a {
+	text-decoration: none;
+}
+*/
+/* Home button Styling*/
+header nav ul {
+	float: left;
+}
+header nav ul li  { /* Content which is inside li tag*/
+	float: left;
+	list-style: none;
+}
+header nav ul li a { /*Styling anchor tag i-e Home*/
+	font-family: arial;
+	font-size: 16px;
+	color: #111;
+	line-height: 63px;
+}
+ 
+ /*Now styling login */
+
+  header .nav-login {
+  	float:  right;
+  }
+    header .nav-login form{
+  	float:  left;
+  	padding-top: 15px;
+  }
+  header .nav-login form input{
+  	float:  left;
+	width:  140px;
+	height: 30px;
+	padding: 0px 10px;/* 0px from top to bottom and 10 px from left to right*/
+	margin-right: 10px;
+	border: none;
+	background-color: #ccc;
+	font-family: arial;
+	font-size: 14px;
+	color: #111;
+	line-height: 30px;
+  }
+  header .nav-login form button{
+  	float:  left;
+	width:  60px;
+	height: 30px;
+	/*padding: 0px 10px; 0px from top to bottom and 10 px from left to right*/
+	margin-right: 10px;
+	border: none;
+	background-color: #f3f3f3;
+	font-family: arial;
+	font-size: 14px;
+	color: #111;
+	line-height: 30px;
+	cursor :pointer; /*It becomes visible to user that we can actually click it*/
+  }
+
+  /*Hover effect*/
+  header .nav-login form button:hover{
+	background-color: #ccc;
+  }
+
+  header .nav-login a {
+  	display: block;
+  	border: none;
+  	float: left;
+  	font-family: arial;
+	font-size: 16px;
+	color: #111;
+	line-height: 63px;
+	cursor: pointer;
+  }
+
+  .main-container{
+  	padding-top: 40px;
+  }
+  .main-container h2{
+  font-family: arial;
+	font-size: 35px;
+	color: #111;
+	line-height: 63px;
+	cursor: pointer;
+	text-align: center;
+  }
+/*Sign up .ph file Styling Begining*/
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  .signup-form{
+  	width: 400px;
+  	margin: 0 auto;
+    background-color: grey; 
+  	padding-top: 30px;
+
+  }
+  .signup{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 150px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.upcomp{
+    font-family: 'Open Sans Condensed', arial, sans;
+    background: #FFFFFF;
+    text-align: center;
+    white-space: normal;
+}
+.signup h2{
+    font-size: 25px;
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+    .signup-form input{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+.signup-form button{
+	display: block;
+	width:  30%;
+	margin: 0 auto;
+	height: 40px;
+	border: none;
+	background-color: #222;
+	font-family: arial;
+	font-size: 16px;
+	color: #fff; /*color of text*/
+	cursor: pointer;
+  }
+.updatecomp button{
+  white-space: normal;
+  word-wrap:break-word;
+  height: 40px;
+  border: none;
+  background-color: #222;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff; /*color of text*/
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+}
+
+.curl-top-left {
+  white-space: normal;
+  word-wrap:break-word;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.curl-top-left:before {
+  pointer-events: none;
+  position: absolute;
+  word-wrap:break-word;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  /* IE9 */
+  background: -webkit-linear-gradient(315deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  background: linear-gradient(135deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+
+.curl-top-left:hover:before {
+  width: 25px;
+  height: 25px;
+  word-wrap:break-word;
+}
+.btnwala{
+  height: 30px;
+  width: 80px;
+  word-wrap: break-word;
+  text-align: center;
+
+}
+.rembtn{
+  width: 50px;
+  word-wrap:break-word;
+}
+   .signup-form button:hover{
+	background-color: #111;
+  }
+.signup h2:hover{
+  color: white;
+  background-color: #111;
+  }
+
+.carousel-indicators li {
+      text-indent: 0;
+      margin: 0 2px;
+      width: 15px;
+      height: 15px;
+      border: none;
+      border-radius: 100%;
+      line-height: 30px;
+      color: #fff;
+      background-color: black;
+      transition: all 0.25s ease;}
+
+.carousel-indicators li:hover,.carousel-indicators li.active {
+        margin: 0 2px;
+        width: 15px;
+        height: 15px;
+        background-color: grey;
+      } 
+@media only screen and (max-width: 500px) {
+  .signup{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 250px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 190px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.signup h2{
+    font-size: 25px;
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+    .signup-form input{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+.signup-form button{
+  display: block;
+  width:  50%;}

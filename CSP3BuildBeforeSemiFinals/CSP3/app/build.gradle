@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.lucky_rathod.csp3"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:mediarouter-v7:26.1.0'
+    implementation 'com.android.support:customtabs:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    // FirebaseUI for Firebase Auth
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
+    implementation 'com.google.firebase:firebase-database:11.0.4'
+    implementation 'com.google.firebase:firebase-storage:11.0.4'
+    compile 'com.firebaseui:firebase-ui-auth:2.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //Displaying images in app
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //For fast Network or Internet
+    compile 'com.android.volley:volley:1.0.0'
+    //For fragmentPagerAdapter because it only have suppport.v4 here we dont need v4 we want to directly use Fragment
+    compile 'com.android.support:support-v13:26.1.0'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
+    //Progress bar
+    compile 'com.github.CardinalNow:Android-CircleProgressIndicator:v0.2'
+}
+// Add to the bottom of the file
+apply plugin: 'com.google.gms.google-services'

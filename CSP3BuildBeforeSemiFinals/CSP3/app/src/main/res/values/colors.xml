@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="textColorButton">#CFD8DC</color>
+    <color name="backgroundForLayout">#eceff1</color>
+    <color name="backTextBlackColor">#212121</color>
+    <color name="backgroundColorButton">#607D8B</color>
+    <color name="backDisableButton">#cfd8dc</color>
+
+
+</resources>

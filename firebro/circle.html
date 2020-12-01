@@ -1,0 +1,34 @@
+<div class="demo">
+	<svg class="progress" width="120" height="120" viewBox="0 0 120 120">
+		<circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+		<circle class="progress__value" cx="60" cy="60" r="54" fill="none" stroke="#f77a52" stroke-width="12" />
+	</svg>
+</div>
+
+<style>
+.demo {
+	.u-absoluteCenter();
+	.u-flexCenter();
+}
+
+.progress {
+	transform: rotate(-90deg);
+}
+
+.progress__value {
+	stroke-dasharray: 336.292;
+	stroke-dashoffset: 336.292;
+	animation: progress 2s infinite alternate;
+}
+:root{
+--test-me: 1;
+}
+@keyframes progress {
+	from {
+		stroke-dashoffset: 33.292;
+	}
+	to {
+		stroke-dashoffset: 33.292;
+	}
+}
+</style>

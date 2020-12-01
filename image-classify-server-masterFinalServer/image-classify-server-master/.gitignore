@@ -1,0 +1,5 @@
+.idea
+*.pyc
+venv/
+env_mysite/
+db.sqlite3

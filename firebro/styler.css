@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed);
+.login{
+  	width: 50%;
+  	margin: 0 auto;
+    background-color: grey; 
+  	padding-top: 30px;
+
+  }
+.login{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 50%;
+    height: 50%;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 150px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+.login input{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 80%;
+    padding: 7px;
+    border: none;
+    background-color : black;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+   input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.login h2{
+    font-size: 25px;
+    color: #fff;
+    background: black;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.login button{
+	display: inline-block;
+	width:  30%;
+	margin: 8px;
+	height: 40px;
+	border: none;
+	background-color: #222;
+	font-family: arial;
+	font-size: 16px;
+	color: #fff; /*color of text*/
+	cursor: pointer;
+  }
+.login h2:hover{
+  color: grey;
+  background-color: #4D4D4D;
+  }
+button{
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid #4CAF50 !important; /* Green */
+}
+@media only screen and (max-width: 650px){
+	.login{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 280px;
+    padding: 30px;
+    height: 350px;
+    background: #FFFFFF;
+    margin: 190px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.login h2{
+    font-size: 25px;
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+    .login input{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 40px;
+}
+.login button{
+  display: inline-block;
+  width:  45%;
+  margin: 3px;
+}
+
+/*table.fixed td:nth-of-type(1) {width:20px;} Setting the width of column 1.*/
+/*table.fixed td:nth-of-type(2) {width:40px;}Setting the width of column 2.*/
+/*table.fixed td:nth-of-type(3) {width:30px;}/*Setting the width of column 3.*/
+/*table.fixed td:nth-of-type(4) {width:30px;}
+table.fixed td:nth-of-type(5) {width:30px;}
+table.fixed td:nth-of-type(6) {width:30px;}
+table.fixed td:nth-of-type(7) {width:30px;}*/

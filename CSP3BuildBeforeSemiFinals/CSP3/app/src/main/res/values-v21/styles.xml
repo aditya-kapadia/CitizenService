@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="AccentButton" parent="ThemeOverlay.AppCompat.Dark">
+        <!-- customize colorButtonNormal for the disable color -->
+        <item name="colorButtonNormal">@color/backgroundColorButton</item>
+        <item name="android:colorAccent">@color/backDisableButton</item>
+        <!-- customize colorAccent for the enabled color -->
+    </style>
+</resources>

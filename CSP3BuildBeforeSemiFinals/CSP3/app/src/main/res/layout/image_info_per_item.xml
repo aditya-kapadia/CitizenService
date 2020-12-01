@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundForLayout">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundForLayout">
+
+
+        <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/noimage"
+            android:layout_centerInParent="true"
+            android:id="@+id/final_captured_image_item"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/output_width_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/final_captured_image_item"
+            android:layout_marginTop="11dp"
+            android:text="Your width will be displayed here "
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/output_depth_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/output_width_item"
+            android:layout_marginTop="11dp"
+            android:text="Your depth will be displayed here "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/final_imageDate_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/output_depth_item"
+            android:layout_marginTop="11dp"
+            android:text="Your imageDate will be displayed here "
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/final_imageTime_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/final_imageDate_item"
+            android:layout_marginTop="11dp"
+            android:text="Your imageTime will be displayed here "
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/final_location_address_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/final_imageTime_item"
+            android:layout_marginTop="11dp"
+            android:text="Your Address will be displayed here "
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/final_location_value_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/final_location_address_item"
+            android:layout_marginTop="11dp"
+            android:text="Your Address Values will be displayed here "
+            android:textSize="18sp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/final_location_value_item"
+            android:id="@+id/send_button_item"
+            android:text="SEND"/>
+
+    </RelativeLayout>-->
+        <LinearLayout
+
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp">
+
+            <com.example.lucky_rathod.csp3.RoundRectCornerImageView
+                android:id="@+id/final_captured_image_item"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/noimage" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/reported_image_info_perItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:text="Reported"
+                        android:textColor="#00796B"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/completed_image_info_perItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1.2"
+                        android:text="Completed"
+                        android:textColor="#FF1744"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date_image_info_perItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="@color/backTextBlackColor"
+                    android:textSize="12sp"
+                    tools:text="Mar 6, 2010" />
+
+                <TextView
+                    android:id="@+id/time_image_info_perItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="@color/backTextBlackColor"
+                    android:textSize="12sp"
+                    tools:text="3:00 PM" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/info"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:id="@+id/widthAndDept_image_info_perItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:paddingBottom="12dp"
+                android:paddingTop="8dp"
+                android:textAllCaps="true"
+                android:textColor="@color/backTextBlackColor"
+                android:textSize="12sp"
+                tools:text="30km S of" />
+
+            <TextView
+                android:id="@+id/location_image_info_perItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:paddingTop="8dp"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                tools:text="Long placeholder location that should wrap to more than 2 lines of text" />
+
+            <Button
+                android:id="@+id/get_directions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_rounded"
+                android:text="Get Directions for above address"
+                android:textColor="@color/textColorButton" />
+
+
+            <TextView
+                android:id="@+id/completed_or_not_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:paddingBottom="12dp"
+                android:paddingTop="20dp"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                tools:text="30km S of"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/completionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingTop="8dp"
+                android:textColor="#757575"
+                android:textSize="12sp"
+                tools:text="Completion Date  :- " />
+
+            <TextView
+                android:id="@+id/completionTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#757575"
+                android:textSize="12sp"
+                tools:text="Completion Time :- " />
+
+            <TextView
+                android:id="@+id/comletedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#757575"
+                android:textSize="12sp"
+                tools:text="Completed By       :- " />
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="FEEDBACK :-"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <EditText
+                android:id="@+id/feedback_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:hint="Enter your Feedback for Reported issue" />
+
+            <TextView
+                android:id="@+id/verfied_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is pothole solved ?  "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <LinearLayout
+                android:id="@+id/resendAndVerifiedButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ok_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:text="Pothole solved "
+                    android:textColor="@color/textColorButton" />
+
+                <Button
+                    android:id="@+id/resend_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:text="RESEND"
+                    android:textColor="@color/textColorButton" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

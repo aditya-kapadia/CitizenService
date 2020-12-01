@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "468612607642",
+    "firebase_url": "https://deepbluecsp.firebaseio.com",
+    "project_id": "deepbluecsp",
+    "storage_bucket": "deepbluecsp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468612607642:android:7e522b96236ebe82",
+        "android_client_info": {
+          "package_name": "com.example.lucky_rathod.csp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468612607642-vm511ildipkmpb98h4t163l8ghiod17v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lucky_rathod.csp3",
+            "certificate_hash": "57976480166451865a618a780caf039a3c84b252"
+          }
+        },
+        {
+          "client_id": "468612607642-c9qgm779qoc78ltqqflfcl2r8srm2557.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9lpeTMsHyU8g2_FV3K4ZD1YS1L_RVP4A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468612607642-c9qgm779qoc78ltqqflfcl2r8srm2557.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

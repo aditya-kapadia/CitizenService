@@ -1,0 +1,141 @@
+#graph div {
+	vertical-align: middle;
+    position:absolute;
+    margin-left:300px;
+    width:500px; height:220px;
+}
+#graph canvas {
+	vertical-align: middle;
+    display: inline-block;
+    position:absolute;
+    margin-left: 230px;
+}
+#graph span {
+    color:#555;
+    vertical-align: middle;
+    display:inline-block;
+    position: absolute;
+    line-height:210px;
+    text-align:center;
+    width:220px;
+    font-family:sans-serif;
+    font-size:22px;
+    font-weight:100;
+    margin-left: 230px;
+}
+
+#graph input {
+	vertical-align: middle;
+    width: 200px;
+}
+#graph1 div {
+	vertical-align: middle;
+    position:absolute;
+    margin-left:100px;
+    width:500px; height:220px;
+    margin-top: -49px;
+}
+#graph1 canvas {
+	vertical-align: middle;
+    display: inline-block;
+    position:absolute;
+    margin-left: 733px;
+    margin-top: -100px;
+}
+#graph1 span {
+	vertical-align: middle;
+    color:#555;
+    display:inline-block;
+    position: absolute;
+    line-height:210px;
+    text-align:center;
+    width:220px;
+    font-family:sans-serif;
+    font-size:22px;
+    font-weight:100;
+    margin-left:733px;
+    margin-top: -100px;
+}
+
+#graph1 input {
+	vertical-align: middle;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 950px){
+#graph div {
+	vertical-align: middle;
+    position:absolute;
+    margin:0 auto;
+    width:500px; height:220px;
+}
+#graph canvas {
+	vertical-align: middle;
+    display: inline-block;
+    position:absolute;
+    margin-left: -25px;
+}
+#graph span {
+    color:#555;
+    vertical-align: middle;
+    display:inline-block;
+    position: absolute;
+    line-height:210px;
+    text-align:center;
+    width:220px;
+    font-family:sans-serif;
+    font-size:22px;
+    font-weight:100;
+    margin-left:-25px;
+}
+
+#graph input {
+	vertical-align: middle;
+    width: 20px;
+}
+#graph1 div {
+	vertical-align: middle;
+    position:absolute;
+    margin-left:100px;
+    width:500px; height:220px;
+    margin-top: -49px;
+}
+#graph1 canvas {
+	vertical-align: middle;
+    display: inline-block;
+    position:absolute;
+    margin-left: -25px;
+    margin-top: 150px;
+}
+#graph1 span {
+	vertical-align: middle;
+    color:#555;
+    display:inline-block;
+    position: absolute;
+    line-height:210px;
+    text-align:center;
+    width:220px;
+    font-family:sans-serif;
+    font-size:22px;
+    font-weight:100;
+    margin-left:-25px;
+    margin-top: 150px;
+}
+
+#graph1 input {
+	vertical-align: middle;
+    width: 200px;
+}
+.table-responsive{
+margin-top: 280px;
+}
+
+	}

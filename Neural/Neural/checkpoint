@@ -1,0 +1,2 @@
+model_checkpoint_path: "pothole-garbage-other-model"
+all_model_checkpoint_paths: "pothole-garbage-other-model"

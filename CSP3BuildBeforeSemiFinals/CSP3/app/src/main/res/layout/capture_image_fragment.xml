@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundForLayout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/capture_image_button"
+        android:layout_marginTop="10dp"
+        android:text="Capture Pothole Image"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/textColorButton"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"/>
+
+    <com.example.lucky_rathod.csp3.RoundRectCornerImageView
+        android:id="@+id/captured_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/capture_image_button"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/noimage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LocationAndAddress"
+        android:orientation="horizontal"
+        android:layout_below="@id/captured_image"
+        android:padding="10dp">
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_gps_location"
+        android:layout_below="@id/captured_image"
+        android:text="Send Your Location"
+        android:layout_weight="4"
+        android:visibility="visible"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/textColorButton" />
+
+        <ImageButton
+            android:layout_marginTop="8dp"
+            android:id="@+id/address_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_rounded"
+            android:src="@drawable/show_address1"
+            android:text="Click to view address"
+            android:theme="@style/AccentButton"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    </LinearLayout>
+    <!--Now after creating above button go in manifest file and provide permissions-->
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LocationAndAddress"
+        android:layout_marginTop="11dp"
+        android:text="Your Address will be displayed here "
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/backTextBlackColor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/continue_button"
+        android:layout_below="@id/address"
+        android:text="CONTINUE"
+        android:enabled="false"
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/textColorButton"
+        android:theme="@style/AccentButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+
+        />
+
+</RelativeLayout>
+</ScrollView>
